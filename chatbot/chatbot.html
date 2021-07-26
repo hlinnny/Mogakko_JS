@@ -3,23 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./static/style.css" />
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <title>ChatBot</title>
     </head>
 
     <body>
-        <div class =contents-container>
-            <div class = output-message>
-                <span>안녕하세요 :)</span>
+        <div class ="contents-container">
+            <div class = "output-message" id = "app">
+                안녕!
             </div>
-            <div class = bot-img>
+            <div class = "bot-img">
                 <img src="./static/image.png", alt="bot-image", width= 150px/>
             </div>
-            <div class = input-message>
-                <input type = "text"/>
+            <div class = "input-message-box">
+                <input id = "input-message" type = "text"/>
             </div>
-            <button class = btn>
+            <button id = "btn">
                 <span>시키기</span>
             </button>
         </div>
+
+        <script src = "./static/event.js"></script>
     </body>
 </html>
